@@ -17,7 +17,6 @@
 		4D71F80C2BC5C0B7009D5207 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71F80B2BC5C0B7009D5207 /* WebView.swift */; };
 		4D71F80E2BC5C512009D5207 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71F80D2BC5C512009D5207 /* ButtonStyles.swift */; };
 		4D71F8102BC5C578009D5207 /* HelpBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71F80F2BC5C578009D5207 /* HelpBook.swift */; };
-		4D71F8142BC5C849009D5207 /* OpenPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71F8132BC5C849009D5207 /* OpenPanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +52,6 @@
 		4D71F80D2BC5C512009D5207 /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		4D71F80F2BC5C578009D5207 /* HelpBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpBook.swift; sourceTree = "<group>"; };
 		4D71F8122BC5C6C4009D5207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D71F8132BC5C849009D5207 /* OpenPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +109,6 @@
 				4D71F80F2BC5C578009D5207 /* HelpBook.swift */,
 				4D71F7E92BC5C061009D5207 /* HelpBookViewer.entitlements */,
 				4D71F7E02BC5C05F009D5207 /* HelpBookViewerApp.swift */,
-				4D71F8132BC5C849009D5207 /* OpenPanel.swift */,
 				4D71F7E62BC5C061009D5207 /* Preview Content */,
 				4D71F80B2BC5C0B7009D5207 /* WebView.swift */,
 			);
@@ -277,7 +274,6 @@
 				4D71F80E2BC5C512009D5207 /* ButtonStyles.swift in Sources */,
 				4D71F7E32BC5C05F009D5207 /* ContentView.swift in Sources */,
 				4D71F8102BC5C578009D5207 /* HelpBook.swift in Sources */,
-				4D71F8142BC5C849009D5207 /* OpenPanel.swift in Sources */,
 				4D71F7E12BC5C05F009D5207 /* HelpBookViewerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

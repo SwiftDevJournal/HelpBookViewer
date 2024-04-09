@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isImporting: Bool = false
+    @State private var bookURL: URL = URL(fileURLWithPath: "")
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        WebView(url: bookURL, filename: "index.html")
+            .toolbar {
+                ToolbarItemGroup(placement: .automatic) {
+                    Button("Choose Book") {
+                        isImporting = true
+                    }
+                    .accessibilityLabel("Choose Book")
+                }
+            }
+            .fileImporter(isPresented: $isImporting, allowedContentTypes: [.package], onCompletion: { result in
+                switch result {
+                    case .success(let url):
+                        bookURL = url
+                    case .failure(let error):
+                        print(error)
+                    }
+            })
+        
     }
 }
 

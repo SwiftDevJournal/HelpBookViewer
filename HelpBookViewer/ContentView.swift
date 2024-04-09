@@ -14,14 +14,16 @@ struct ContentView: View {
     var body: some View {
         WebView(url: bookURL, filename: "index.html")
             .toolbar {
-                ToolbarItemGroup(placement: .automatic) {
-                    Button("Choose Book") {
+                ToolbarItemGroup(placement: .principal) {
+                    Button(action: {
                         isImporting = true
-                    }
-                    .accessibilityLabel("Choose Book")
+                    }, label: {
+                        Label("Choose Book", systemImage: "book.closed.fill")
+                            .labelStyle(VerticalLabelStyle())
+                    }).accessibilityLabel("Choose Help Book")
                 }
             }
-            .fileImporter(isPresented: $isImporting, allowedContentTypes: [.package], onCompletion: { result in
+            .fileImporter(isPresented: $isImporting, allowedContentTypes: [.bundle], onCompletion: { result in
                 switch result {
                     case .success(let url):
                         bookURL = url

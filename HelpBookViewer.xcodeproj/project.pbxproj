@@ -95,10 +95,10 @@
 		4D71F7DF2BC5C05F009D5207 /* HelpBookViewer */ = {
 			isa = PBXGroup;
 			children = (
-				4D71F7E02BC5C05F009D5207 /* HelpBookViewerApp.swift */,
-				4D71F7E22BC5C05F009D5207 /* ContentView.swift */,
 				4D71F7E42BC5C061009D5207 /* Assets.xcassets */,
+				4D71F7E22BC5C05F009D5207 /* ContentView.swift */,
 				4D71F7E92BC5C061009D5207 /* HelpBookViewer.entitlements */,
+				4D71F7E02BC5C05F009D5207 /* HelpBookViewerApp.swift */,
 				4D71F7E62BC5C061009D5207 /* Preview Content */,
 			);
 			path = HelpBookViewer;

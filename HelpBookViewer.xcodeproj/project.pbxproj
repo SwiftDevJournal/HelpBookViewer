@@ -14,6 +14,7 @@
 		4D71F7F32BC5C062009D5207 /* HelpBookViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71F7F22BC5C062009D5207 /* HelpBookViewerTests.swift */; };
 		4D71F7FD2BC5C062009D5207 /* HelpBookViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71F7FC2BC5C062009D5207 /* HelpBookViewerUITests.swift */; };
 		4D71F7FF2BC5C062009D5207 /* HelpBookViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71F7FE2BC5C062009D5207 /* HelpBookViewerUITestsLaunchTests.swift */; };
+		4D71F80C2BC5C0B7009D5207 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71F80B2BC5C0B7009D5207 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		4D71F7F82BC5C062009D5207 /* HelpBookViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpBookViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D71F7FC2BC5C062009D5207 /* HelpBookViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpBookViewerUITests.swift; sourceTree = "<group>"; };
 		4D71F7FE2BC5C062009D5207 /* HelpBookViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpBookViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4D71F80B2BC5C0B7009D5207 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				4D71F7E92BC5C061009D5207 /* HelpBookViewer.entitlements */,
 				4D71F7E02BC5C05F009D5207 /* HelpBookViewerApp.swift */,
 				4D71F7E62BC5C061009D5207 /* Preview Content */,
+				4D71F80B2BC5C0B7009D5207 /* WebView.swift */,
 			);
 			path = HelpBookViewer;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D71F80C2BC5C0B7009D5207 /* WebView.swift in Sources */,
 				4D71F7E32BC5C05F009D5207 /* ContentView.swift in Sources */,
 				4D71F7E12BC5C05F009D5207 /* HelpBookViewerApp.swift in Sources */,
 			);

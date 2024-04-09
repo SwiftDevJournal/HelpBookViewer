@@ -23,6 +23,7 @@ struct ContentView: View {
                     }).accessibilityLabel("Choose Help Book")
                 }
             }
+            // FIXME: I can't open the Apple help books I published in Phel.
             .fileImporter(isPresented: $isImporting, allowedContentTypes: [.appleHelpBook], onCompletion: { result in
                 switch result {
                     case .success(let url):

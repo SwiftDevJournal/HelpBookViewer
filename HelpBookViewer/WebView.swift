@@ -10,11 +10,11 @@ import WebKit
 
 struct WebView: NSViewRepresentable {
     var bookURL: URL
-    var currentChapterFilename: String = ""
+    var currentFilename: String = ""
     
     init(url: URL, filename: String) {
         self.bookURL = url
-        self.currentChapterFilename = filename
+        self.currentFilename = filename
     }
     
     func makeNSView(context: Context) -> WKWebView {
@@ -23,10 +23,10 @@ struct WebView: NSViewRepresentable {
     }
     
     func updateNSView(_ nsView: WKWebView, context: Context) {
-        let oebpsFolder = bookURL.appendingPathComponent("OEBPS")
-        let textFolder = oebpsFolder.appendingPathComponent("Text")
-        let chapterFile = textFolder.appendingPathComponent(currentChapterFilename)
-        nsView.loadFileURL(chapterFile, allowingReadAccessTo: oebpsFolder)
+        let contentsFolder = bookURL.appendingPathComponent("Contents")
+        let resourcesFolder = contentsFolder.appendingPathComponent("Resources")
+        let currentFile = resourcesFolder.appendingPathComponent(currentFilename)
+        nsView.loadFileURL(currentFile, allowingReadAccessTo: resourcesFolder)
     }
 }
 

@@ -23,7 +23,7 @@ struct ContentView: View {
                     }).accessibilityLabel("Choose Help Book")
                 }
             }
-            .fileImporter(isPresented: $isImporting, allowedContentTypes: [.bundle], onCompletion: { result in
+            .fileImporter(isPresented: $isImporting, allowedContentTypes: [.appleHelpBook], onCompletion: { result in
                 switch result {
                     case .success(let url):
                         bookURL = url

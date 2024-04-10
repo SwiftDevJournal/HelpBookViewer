@@ -10,3 +10,12 @@ Why create this app when Apple has a Help Viewer app? The Help Viewer app requir
 2. Select your help book from the Open panel.
 3. Click the Open button.
 
+## Current Limitations
+
+The Help Book Viewer app is in an early stage of development. It has the following limitations:
+
+* The Open panel lets you choose any type of file. Make sure you choose a help book.
+* CSS files must be in a `CSS` folder inside the help book's Resources folder.
+* Image files must be in an `Images` folder inside the help book's Resources folder.
+* The app assumes the home page file is `index.html`.
+* The app does not currently support localized help books.

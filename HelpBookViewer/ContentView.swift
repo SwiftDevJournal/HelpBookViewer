@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct ContentView: View {
     @State private var isImporting: Bool = false
@@ -23,8 +24,8 @@ struct ContentView: View {
                     }).accessibilityLabel("Choose Help Book")
                 }
             }
-            // FIXME: I can't open the Apple help books I published in Phel.
-            .fileImporter(isPresented: $isImporting, allowedContentTypes: [.appleHelpBook], onCompletion: { result in
+            // FIXME: Allow only help books to be opened. The only way I can open help books from the file importer now is to add .item to the list of allowed content types. But this allows any file type to be opened.
+            .fileImporter(isPresented: $isImporting, allowedContentTypes: [.appleHelpBook, .item], onCompletion: { result in
                 switch result {
                     case .success(let url):
                         bookURL = url

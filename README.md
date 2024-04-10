@@ -19,3 +19,4 @@ The Help Book Viewer app is in an early stage of development. It has the followi
 * Image files must be in an `Images` folder inside the help book's Resources folder.
 * The app assumes the home page file is `index.html`.
 * The app does not currently support localized help books.
+* There are no Back and Forward buttons.
